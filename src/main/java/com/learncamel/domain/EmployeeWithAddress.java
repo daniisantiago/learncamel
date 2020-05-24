@@ -21,6 +21,10 @@ public class EmployeeWithAddress {
         return address;
     }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "EmployeeWithAddress{" +
