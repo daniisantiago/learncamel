@@ -1,5 +1,6 @@
-package com.learncamel.routes;
+package com.learncamel.routes.process;
 
+import com.learncamel.routes.process.CamelModifyFileProcessorRoute;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.test.junit4.CamelTestSupport;
