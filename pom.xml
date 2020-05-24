@@ -41,6 +41,15 @@
             <version>1.7.12</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-test -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test</artifactId>
+            <version>3.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
 
 
     </dependencies>
