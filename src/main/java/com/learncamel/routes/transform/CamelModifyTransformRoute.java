@@ -1,4 +1,4 @@
-package com.learncamel.transform;
+package com.learncamel.routes.transform;
 
 import org.apache.camel.builder.RouteBuilder;
 
