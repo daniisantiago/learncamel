@@ -49,8 +49,12 @@
             <scope>test</scope>
         </dependency>
 
-
-
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-gson -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-gson</artifactId>
+            <version>3.3.0</version>
+        </dependency>
 
     </dependencies>
 
