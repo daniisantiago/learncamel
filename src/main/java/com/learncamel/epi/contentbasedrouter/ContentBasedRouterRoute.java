@@ -15,6 +15,8 @@ public class ContentBasedRouterRoute extends RouteBuilder {
                     .when(header("CamelFileNameConsumed").endsWith(".json"))
                         .to("file:json")
                     .otherwise()
-                        .to("file:other");
+                        .to("file:other")// se colocar o .stop() ao lado ele não sera copiado para pasta all
+                    .end()//fechando o choice()
+                .to("file:all"); //copiando todos os arquivos para pasta all
     }
 }
