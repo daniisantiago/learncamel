@@ -1,4 +1,4 @@
-package com.learncamel.routes.defaulterrorhandler;
+package com.learncamel.routes.errorhandling;
 
 import com.learncamel.bean.DataModifier;
 import org.apache.camel.builder.RouteBuilder;
