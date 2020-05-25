@@ -22,7 +22,7 @@ public class FixedLengthUnMarshalRouteTest extends CamelTestSupport {
         //Thread.sleep(5000);
 
         assertNotNull(employeeWithFixedLengthsList);
-        assertEquals("dani", employeeWithFixedLengthsList.get(0).getName());
+        assertEquals("danii", employeeWithFixedLengthsList.get(0).getName());
         assertEquals("Engineer", employeeWithFixedLengthsList.get(1).getRole());
     }
 }
