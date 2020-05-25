@@ -9,10 +9,10 @@ import org.junit.Test;
 import java.time.LocalDate;
 import java.util.List;
 
-public class FixedLengthUnMarshalDateRouteTest extends CamelTestSupport {
+public class FixedLengthUnMarshalAgeRouteTest extends CamelTestSupport {
     @Override
     protected RoutesBuilder createRouteBuilder() throws Exception {
-        return new FixedLengthUnMarshalDateRoute();
+        return new FixedLengthUnMarshalAgeRoute();
     }
 
     @Test
@@ -26,5 +26,7 @@ public class FixedLengthUnMarshalDateRouteTest extends CamelTestSupport {
 
         LocalDate expectedDate = LocalDate.of(2017,01,12);
         assertEquals(expectedDate.getYear(), employeeList.get(0).getJoinDate().getYear());
+        assertEquals(28, employeeList.get(0).getAge());
+        assertEquals(30, employeeList.get(1).getAge());
     }
 }

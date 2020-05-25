@@ -16,6 +16,8 @@ public class EmployeeWithFixedLength {
     private String role;
     @DataField(pos = 4, length = 8, pattern = "ddMMyyyy")
     private LocalDate joinDate;
+    @DataField(pos = 5, delimiter = "^")
+    private int age;
 
     @Override
     public String toString() {
@@ -24,6 +26,7 @@ public class EmployeeWithFixedLength {
                 ", name='" + name + '\'' +
                 ", role='" + role + '\'' +
                 ", joinDate=" + joinDate +
+                ", age=" + age +
                 '}';
     }
 
@@ -57,5 +60,13 @@ public class EmployeeWithFixedLength {
 
     public void setJoinDate(LocalDate joinDate) {
         this.joinDate = joinDate;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
