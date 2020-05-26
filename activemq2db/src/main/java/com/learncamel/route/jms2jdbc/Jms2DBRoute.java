@@ -15,7 +15,7 @@ public class Jms2DBRoute extends RouteBuilder {
                 .process(new InsertProcessor())
                 .to("jdbc:myDataSource")
                 .to("sql:select * from messages?dataSource=myDataSource")
-                .to("log:?level=INFO&showBody=true")
-                .to("direct:output");
+                .to("log:?level=INFO&showBody=true");
+               //.to("direct:output");
     }
 }
