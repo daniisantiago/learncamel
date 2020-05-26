@@ -1,4 +1,4 @@
-package com.learncamel.route.jdbc;
+package com.learncamel.route.jms2jdbc;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.RoutesBuilder;
@@ -11,8 +11,7 @@ import org.junit.Test;
 import javax.sql.DataSource;
 import java.util.ArrayList;
 
-
-public class DBPostgresRouteTest extends CamelTestSupport {
+public class Jms2DBRouteTest extends CamelTestSupport {
     @Override
     protected CamelContext createCamelContext() throws Exception {
         String url = "jdbc:postgresql://localhost:5432/localDB";
@@ -27,7 +26,7 @@ public class DBPostgresRouteTest extends CamelTestSupport {
 
     @Override
     protected RoutesBuilder createRouteBuilder() throws Exception {
-        return new DBPostgresRoute();
+        return new Jms2DBRoute();
     }
 
     private DataSource setupDataSource(String connectURI) {
@@ -40,11 +39,9 @@ public class DBPostgresRouteTest extends CamelTestSupport {
     }
 
     @Test
-    public void insertData(){
-
-        String input = "first db input2";
-        ArrayList responseList = template.requestBody("direct:dbInput", input, ArrayList.class);
-        System.out.println("responseList: " + responseList.size());
+    public void jms2DBTest(){
+        ArrayList responseList = (ArrayList) consumer.receiveBody("direct:output");
+        System.out.println("list: " + responseList.size());
         assertNotEquals(0, responseList.size());
     }
 }
