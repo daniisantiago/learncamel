@@ -23,11 +23,16 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="3a6aa922-56c6-45a1-a33f-207c20b03981">
+        <schema name="pg_catalog" object-types="function, table, view" />
+        <schema name="public" object-types="function, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3a6aa922-56c6-45a1-a33f-207c20b03981">
-      <console name="localDB" type="STANDARD" schema="public" session="Main"><![CDATA[select * from messages]]></console>
+      <console name="localDB" type="STANDARD" schema="public" session="Main">select * from messages</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

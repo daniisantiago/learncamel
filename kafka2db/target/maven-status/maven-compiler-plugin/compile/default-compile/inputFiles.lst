@@ -1,0 +1,6 @@
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\routes\jdbc\DBPostgresRoute.java
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\routes\kafka\KafkaConsumerRoute.java
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\launch\AppLauncher.java
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\routes\exception\ExceptionProcessor.java
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\routes\jdbc\InsertProcessor.java
+C:\Temp\learncamel\kafka2db\src\main\java\com\learncamel\routes\kafka2jdbc\Kafka2jdbcRoute.java
